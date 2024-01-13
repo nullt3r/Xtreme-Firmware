@@ -249,4 +249,4 @@ void furi_hal_uart_set_irq_cb(
             LL_LPUART_EnableIT_RXNE_RXFNE(LPUART1);
         }
     }
-}
+}
