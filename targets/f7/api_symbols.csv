@@ -1211,9 +1211,10 @@ Function,-,furi_hal_clock_switch_hse2hsi,void,
 Function,-,furi_hal_clock_switch_hse2pll,_Bool,
 Function,-,furi_hal_clock_switch_hsi2hse,void,
 Function,-,furi_hal_clock_switch_pll2hse,_Bool,
+Function,+,furi_hal_console_deinit,void,
 Function,+,furi_hal_console_disable,void,
 Function,+,furi_hal_console_enable,void,
-Function,+,furi_hal_console_init,void,
+Function,+,furi_hal_console_init,void,"FuriHalUartId, uint32_t"
 Function,+,furi_hal_console_printf,void,"const char[], ..."
 Function,+,furi_hal_console_puts,void,const char*
 Function,+,furi_hal_console_set_tx_callback,void,"FuriHalConsoleTxCallback, void*"
@@ -1569,6 +1570,7 @@ Function,+,furi_hal_uart_set_br,void,"FuriHalUartId, uint32_t"
 Function,+,furi_hal_uart_set_irq_cb,void,"FuriHalUartId, void (*)(UartIrqEvent, uint8_t, void*), void*"
 Function,+,furi_hal_uart_suspend,void,FuriHalUartId
 Function,+,furi_hal_uart_tx,void,"FuriHalUartId, uint8_t*, size_t"
+Function,+,furi_hal_uart_wait_tx_complete,void,FuriHalUartId
 Function,+,furi_hal_usb_disable,void,
 Function,+,furi_hal_usb_enable,void,
 Function,+,furi_hal_usb_get_config,FuriHalUsbInterface*,
