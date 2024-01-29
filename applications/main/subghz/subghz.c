@@ -425,7 +425,8 @@ int32_t subghz_app(char* p) {
         }
     }
 
-    furi_hal_power_suppress_charge_enter();
+    // Commented out since I am using external module and noise is not an issue
+    // furi_hal_power_suppress_charge_enter();
 
     view_dispatcher_run(subghz->view_dispatcher);
 
@@ -434,7 +435,7 @@ int32_t subghz_app(char* p) {
         furi_timer_free(subghz->timer);
     }
 
-    furi_hal_power_suppress_charge_exit();
+    // furi_hal_power_suppress_charge_exit();
 
     subghz_free(subghz, alloc_for_tx);
 
